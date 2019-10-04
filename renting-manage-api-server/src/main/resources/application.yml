@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: yhau-reting-manage-api-server
+server:
+  port: 18080
+dubbo:
+  application:
+    name: dubbo-consumer-renting-manage
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    client: zkclient
+#######详情日志##########
+logging:
+  level:
+    root: DEBUG
